@@ -7,32 +7,19 @@
     </ul>
     <% @user.friends.each do |friend| %>
      <%= link_to friend.name, user_path(friend.id)  %>
-       <% if current_user.id == @user.id %>
-         <%= link_to 'Unfriend', unfriend_path(user_id: friend.id, friend_id: current_user.id), class: 'btn btn-danger', method: :delete %>
-         <%else%>
-       <% end %><br><br>
-   <% end %>
-       </ul>
-    <ul class="posts">
-    <% if current_user.id == @user.id %>
-
-      <li class="posts">
-      <h3>Friends Requests</h3>
-      <% current_user.friend_requests.each do |person| %>
-        <%= link_to person.name, user_path(person.id)  %>
-        <%= link_to 'Accept', friendship_path(user_id: person.id, friend_id: current_user.id), class: 'btn btn-success', method: :post %>
-        <%# <%= link_to 'Accept', friendship_path(user_id: person.id, friend_id: current_user.id), class: 'button is-success footer-item', method: :post  %> %>
-        <%= link_to 'Reject', reject_path(user_id: person.id, friend_id: current_user.id), class: 'btn btn-danger', method: :delete %>
-      <% end %>
-      </li>
-      <li class="posts">
-      <h3>Pending invitations</h3>
-      <% current_user.pending_friends.each do |person| %>
-        <%= link_to person.name, user_path(person.id)  %>
-        <%= link_to 'Cancel invitation', cancel_path(user_id: person.id, friend_id: current_user.id), class: 'btn btn-danger', method: :delete %>
-      <% end %>
-      </li>
     <% end %>
-    </ul>
+
+    <% if current_user.id == @user.id %>
+      <h3>Pending invitations</h3>
+      <% current_user.pending_friends.each do |friend| %>
+        <%= link_to "To #{friend.name}", user_path(friend.id)  %>
+      <% end %>
+  
+      <h3>Friend Requests</h3>
+      <% current_user.friend_requests.each do |friend| %>
+        <%= link_to "From #{friend.name}", user_path(friend.id)  %>
+        <%= link_to 'Confirm', friendship_path(user_id: friend.id, friend_id: current_user.id), method: :patch %>
+      <% end %>
+    <% end %>
   </article>
 </section>
