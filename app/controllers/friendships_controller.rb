@@ -1,5 +1,9 @@
 class FriendshipsController < ApplicationController
 
+  def index
+    @friendships = Friendship.all
+  end
+
   def create
     @friendship = Friendship.create(friendship_params)
     if @friendship.save
@@ -10,7 +14,7 @@ class FriendshipsController < ApplicationController
       render 'new'
     end
   end
-  
+
   def update
     @friendship = Friendship.find_by(friend_id: params[:friend_id], user_id: params[:user_id])
     @friendship.update(confirmed: true)
