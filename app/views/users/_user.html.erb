@@ -5,7 +5,7 @@
   </span>
 
   <% if user.pending_friends.include?(current_user) || current_user.pending_friends.include?(user) %>
-    <%= 'Invitation still pending'%>
+    <%= 'Confirmation pending'%>
   <% elsif user.friend?(current_user) || current_user.friend?(user) %>
     <%= 'Alredy your Friend'%>
   <%else%>
