@@ -17,4 +17,11 @@ RSpec.describe 'User Sign up/in' do
     expect(page).to have_text('Post was successfully created.')
   end
 
+  it 'Failed if the user try to create a blank post' do
+    visit '/'
+    fill_in 'post[content]', with: ''
+    click_on 'commit'
+    expect(page).to have_text("Post could not be saved. Content can't be blank")
+  end
+
 end
