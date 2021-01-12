@@ -1,9 +1,9 @@
 require 'rails_helper'
 
 RSpec.describe 'User Sign up/in' do
-
   before :each do
-    user = User.create(name: 'myname', email: 'myname@email.com', password: 'mypassword', password_confirmation: 'mypassword')
+    User.create(name: 'myname', email: 'myname@email.com', password: 'mypassword',
+                password_confirmation: 'mypassword')
     visit 'users/sign_in'
     fill_in 'user[email]', with: 'myname@email.com'
     fill_in 'user[password]', with: 'mypassword'
@@ -23,5 +23,4 @@ RSpec.describe 'User Sign up/in' do
     click_on 'commit'
     expect(page).to have_text("Post could not be saved. Content can't be blank")
   end
-
 end
