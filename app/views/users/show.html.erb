@@ -19,6 +19,7 @@
       <% current_user.friend_requests.each do |friend| %>
         <%= link_to "From #{friend.name}", user_path(friend.id)  %>
         <%= link_to 'Confirm', friendship_path(user_id: friend.id, friend_id: current_user.id), method: :patch %>
+        <%= link_to 'Reject', friendship_path(user_id: friend.id, friend_id: current_user.id), method: :delete %>
       <% end %>
     <% end %>
   </article>
