@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'like button' do
+RSpec.describe 'Like button' do
   it 'User can like or dislike a comment or post' do
     User.create(name: 'Thales', email: 'thales@gmail.com', password: '123456',
                 password_confirmation: '123456')
