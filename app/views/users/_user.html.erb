@@ -12,6 +12,5 @@
       <%= link_to 'Add as Friend',
         friendships_path(friendship: { user_id: current_user, friend_id: user.id, confirmed: false }), method: :post
       %>
-    <% end %>
   <%end%>
 </li>
