@@ -50,6 +50,7 @@ end
 group :test do
   gem 'capybara'
   gem 'rspec'
+  gem 'shoulda-matchers'
 end
 
 group :development do
