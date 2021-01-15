@@ -36,6 +36,6 @@ class User < ApplicationRecord
   end
 
   def friends_and_own_posts
-    Post.where(user: (friends << self))
+    Post.where(user: (friends << self)).includes(:user, :comments)
   end
 end
