@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'User Sign up/in' do
+RSpec.describe 'Comments' do
   before :each do
     User.create(name: 'myname', email: 'myname@email.com', password: 'mypassword',
                 password_confirmation: 'mypassword')
