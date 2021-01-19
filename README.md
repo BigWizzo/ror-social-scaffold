@@ -11,7 +11,6 @@
 
 TBA
 
-
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
@@ -46,7 +45,6 @@ To make sure the linters' checks using Github Actions work properly, you should 
 3. Start working on your milestone as usual.
 4. Open a PR from the `feature/branch` when your work is done.
 
-
 ### Usage
 
 Start server with:
@@ -55,7 +53,7 @@ Start server with:
     rails server
 ```
 
-Open `http://localhost:3000/` in your browser.
+Open `https://desolate-cliffs-83306.herokuapp.com` in your browser.
 
 ### Run tests
 
@@ -67,11 +65,25 @@ Open `http://localhost:3000/` in your browser.
 
 ### Deployment
 
-TBA
+- In the console
+- run `create heroku`
+- run `git push heroku main`
+- run `heroku run rake db:migrate`
+- run `heroku open` to open the application
 
 ## Authors
 
-TBA
+👤 **Will Nyamunokora**
+
+- Github: [@bigwizzo](https://github.com/bigwizzo)
+- Twitter: [@willnyamunokora](https://twitter.com/willnyamunokora)
+- Linkedin: [Will Nyamunokora](https://linkedin.com/in/willnyamunokora)
+
+👤 **Thales Neves**
+
+- GitHub: [@thneves](https://github.com/thneves)
+- Twitter: [@tsneves11](https://twitter.com/tsneves11)
+- LinkedIn: [thales-neves10](https://www.linkedin.com/in/thales-neves10/)
 
 ## 🤝 Contributing
 
@@ -90,4 +102,3 @@ TBA
 ## 📝 License
 
 TBA
-
