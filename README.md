@@ -97,8 +97,11 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-TBA
+- Microverse
+- Stand up Team
+- TSEs
+- Web Cruch
 
 ## 📝 License
 
-TBA
+This project is [MIT](https://opensource.org/licenses/MIT) licensed.
