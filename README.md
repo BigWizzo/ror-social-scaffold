@@ -9,7 +9,7 @@
 
 ## Live Demo
 
-Open `https://desolate-cliffs-83306.herokuapp.com` in your browser.
+Open [Live Demo](https://desolate-cliffs-83306.herokuapp.com)
 
 ## Getting Started
 
