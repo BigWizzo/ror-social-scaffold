@@ -9,7 +9,7 @@
 
 ## Live Demo
 
-TBA
+Open `https://desolate-cliffs-83306.herokuapp.com` in your browser.
 
 ## Getting Started
 
@@ -53,7 +53,7 @@ Start server with:
     rails server
 ```
 
-Open `https://desolate-cliffs-83306.herokuapp.com` in your browser.
+Open `http://localhost:3000/` in your browser.
 
 ### Run tests
 
