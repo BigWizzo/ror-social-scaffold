@@ -77,7 +77,7 @@ Open `http://localhost:3000/` in your browser.
 
 - Github: [@bigwizzo](https://github.com/bigwizzo)
 - Twitter: [@willnyamunokora](https://twitter.com/willnyamunokora)
-- Linkedin: [Will Nyamunokora](https://linkedin.com/in/willnyamunokora)
+- Linkedin: [@willnyamunokora](https://linkedin.com/in/willnyamunokora)
 
 👤 **Thales Neves**
 
